@@ -6,7 +6,7 @@ An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment 
 
 ![](https://img.shields.io/badge/Sentiment_Analysis-ACOSQE-green)
 ![](https://img.shields.io/badge/Model-Prepare-blue)
-![](https://img.shields.io/github/license/sydmouu/ASQP-ITSCL)
+![](https://img.shields.io/github/license/sydmou/ASQP-ITSCL)
 
 </div>
 
