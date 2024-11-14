@@ -88,6 +88,3 @@ If you find this repository helpful, please consider citing our paper:
     pages = "7698--7714",
 }
 ```
-
-
-## ☕️ Citation
