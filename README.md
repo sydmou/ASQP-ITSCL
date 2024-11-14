@@ -29,7 +29,7 @@ ITSCL is an instruction tuning-based contrastive learning method for ASQP Predic
 
 
 <p align="center">
-    <img src="./images/fig1.png" width="1000">
+    <img src="./images/fig1.png" width="500">
 </p>
 
 
