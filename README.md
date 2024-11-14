@@ -19,5 +19,21 @@ An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment 
   <a href="#%EF%B8%8F-citation">Citation</a>
 </p>
 
-Repo for EMNLP 2024 paper [ITSCL: An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment Quad Prediction with Implicit Aspects and Opinions](https://aclanthology.org/2024.findings-emnlp.453/).
+Repo for EMNLP 2024 Findings Paper [ITSCL: An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment Quad Prediction with Implicit Aspects and Opinions](https://aclanthology.org/2024.findings-emnlp.453/).
 
+## ✨ Introduction 
+
+ITSCL is an instruction tuning-based contrastive learning method for ASQP Prediction:
+
+- ITSCL  **combination of elements**:
+
+
+<p align="center">
+    <img src="./images/fig1.png" width="1000">
+</p>
+
+- ITSCL  **permutations of elements**:
+
+<p align="center">
+    <img src="./images/fig2.png" width="1000">
+</p>
