@@ -19,5 +19,5 @@ An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment 
   <a href="#%EF%B8%8F-citation">Citation</a>
 </p>
 
-
+Repo for EMNLP 2024 paper [ITSCL: An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment Quad Prediction with Implicit Aspects and Opinions](https://aclanthology.org/2024.findings-emnlp.453/).
 
