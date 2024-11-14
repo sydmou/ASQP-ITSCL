@@ -65,5 +65,29 @@ We further investigate the ability of UAUL under low resource scenario:
     pytorch_lightning==0.8.1
     numpy==1.21.2
 
+## ☕️ Citation
+
+If you find this repository helpful, please consider citing our paper:
+
+```
+@inproceedings{zhang-etal-2024-instruction,
+    title = "An Instruction Tuning-Based Contrastive Learning Framework for Aspect Sentiment Quad Prediction with Implicit Aspects and Opinions",
+    author = "Zhang, Hao  and
+      Cheah, Yu-N  and
+      He, Congqing  and
+      Yi, Feifan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.453",
+    pages = "7698--7714",
+}
+```
+
 
 ## ☕️ Citation
