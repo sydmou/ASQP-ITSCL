@@ -54,11 +54,12 @@ We further investigate the ability of UAUL under :
 
 
 ## Environment
-    Python==3.8
-    torch==1.11.0
-    transformers==4.14.1
-    pytorch_lightning==0.8.1
-    numpy==1.21.2
+
+Python==3.8
+torch==1.11.0
+transformers==4.14.1
+pytorch_lightning==0.8.1
+numpy==1.21.2
 
 ## ☕️ Citation
 
