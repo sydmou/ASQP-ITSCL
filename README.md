@@ -61,7 +61,7 @@ We further investigate the ability of ITSCL under :
     numpy==1.21.2
 
 
-##  
+## The parameter settings for the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
  
  This template is primarily used for training or inference in sentiment analysis tasks focused on the laptop domain.
 
