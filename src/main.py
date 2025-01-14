@@ -432,82 +432,7 @@ def evaluate(data_loader, model, sents,task):
 
     return scores
 
-def SaveAspectOpinionFigure():
-    X = tsne_dict['aspect_opinion_vecs'][-1700:]  # tsne_dict中的向量数组
-    Y = tsne_dict['aspect_opinion_labels'][-1700:]  # tsne_dict中的类别标签
-    X = np.array(X)
-    Y = np.array(Y)  
-    X_embedded = TSNE(n_components=3, perplexity=2, init="pca").fit_transform(X)
-    num_classes = len(set(Y))
-    colors = ['#FF7D40', '#00C957', '#1E90FF','#ffd966','#9C2DCF']
-    figure = plt.figure(figsize=(5, 5), dpi=80)
-    x = X_embedded[:, 0]  # 横坐标
-    y = X_embedded[:, 1]  # 纵坐标
-    for i in range(num_classes):
-        indices = np.where(np.array(Y) == i)[0]
-        plt.scatter(x[indices], y[indices], color=colors[i], s=5)
-        #plt.savefig('AspectOpinionEPOCH={}.png'.format(args.num_train_epochs))
-        plt.savefig('AspectOpinionEPOCH={}_DATASET={}.png'.format(args.num_train_epochs, args.dataset))
 
-    plt.show()
-
-def SaveAspectFigure():
-    X = tsne_dict['aspect_vecs'][-1700:] 
-    Y = tsne_dict['aspect_labels'][-1700:]  
-    X = np.array(X)
-    Y = np.array(Y)  
-    X_embedded = TSNE(n_components=2, perplexity=2, init="pca").fit_transform(X)
-    num_classes = len(set(Y))
-    colors = ['#FF0000', '#EEB422', '#836FFF']
-    figure = plt.figure(figsize=(5, 5), dpi=80)
-    x = X_embedded[:, 0]  # 横坐标
-    y = X_embedded[:, 1]  # 纵坐标
-    for i in range(num_classes):
-        indices = np.where(np.array(Y) == i)[0]
-        plt.scatter(x[indices], y[indices], color=colors[i], s=5)
-        #plt.savefig('AspectEPOCH={}.png'.format(args.num_train_epochs))
-        plt.savefig('AspectEPOCH={}_DATASET={}.png'.format(args.num_train_epochs, args.dataset))
-
-    plt.show()    
-    
-def SaveOpinionFigure():
-    X = tsne_dict['opinion_vecs'][-1700:] 
-    Y = tsne_dict['opinion_labels'][-1700:]  
-    X = np.array(X)
-    Y = np.array(Y)  
-    X_embedded = TSNE(n_components=2, perplexity=2, init="pca").fit_transform(X)
-    num_classes = len(set(Y))
-    colors = ['#FF7D40', '#00C957', '#1E90FF']
-    figure = plt.figure(figsize=(5, 5), dpi=80)
-    x = X_embedded[:, 0]  # 横坐标
-    y = X_embedded[:, 1]  # 纵坐标
-    for i in range(num_classes):
-        indices = np.where(np.array(Y) == i)[0]
-        plt.scatter(x[indices], y[indices], color=colors[i], s=5)
-        #plt.savefig('OpinionEPOCH={}.png'.format(args.num_train_epochs))
-        plt.savefig('OpinionEPOCH={}_DATASET={}.png'.format(args.num_train_epochs, args.dataset))
-
-    plt.show()   
-    
-def SaveSentimentFigure():
-    X = tsne_dict['sentiment_vecs'][-1700:]  # tsne_dict中的向量数组
-    Y = tsne_dict['sentiment_labels'][-1700:]  # tsne_dict中的类别标签
-    X = np.array(X)
-    Y = np.array(Y)  
-    X_embedded = TSNE(n_components=3, perplexity=2, init="pca").fit_transform(X)
-    num_classes = len(set(Y))
-    colors = ['#FF7D40', '#00C957', '#1E90FF','#ffd966']
-    figure = plt.figure(figsize=(5, 5), dpi=80)
-    x = X_embedded[:, 0]  # 横坐标
-    y = X_embedded[:, 1]  # 纵坐标
-    for i in range(num_classes):
-        indices = np.where(np.array(Y) == i)[0]
-        plt.scatter(x[indices], y[indices], color=colors[i], s=5)
-        #plt.savefig('SentimentEPOCH={}.png'.format(args.num_train_epochs))
-        plt.savefig('SentimentEPOCH={}_DATASET={}.png'.format(args.num_train_epochs, args.dataset))
-
-
-    plt.show()   
     
     
 # initialization
@@ -609,10 +534,6 @@ if args.do_eval:
     # compute the performance scores
     scores = evaluate(test_loader, model, sents, args.task)
     
-    SaveAspectOpinionFigure()
-    SaveAspectFigure()
-    SaveOpinionFigure()
-    SaveSentimentFigure()
     
     # write to file
     log_file_path = f"results_log/{args.dataset}.txt"
