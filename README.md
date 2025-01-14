@@ -62,7 +62,14 @@ We further investigate the ability of ITSCL under :
 
 
 ## The Parameter settings: 
-
+ --------------------------------------------
+ Model          Dataset       Optimal Epochs
+ --------------------------------------------
+ T5-base        Restaurant    50
+ T5-base        Laptop        50
+ T5-large       Laptop        35
+ T5-large       Restaurant    30
+ --------------------------------------------
  
  T5-base excelled at 50 epochs, T5-large at 35 epochs (Laptop) and 30 epochs (Restaurant).
 
