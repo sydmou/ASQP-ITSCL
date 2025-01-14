@@ -26,8 +26,8 @@ from losses import SupConLoss
 from data_utils_new import GenSCLNatDataset
 #from data_utils import ABSADataset
 
-from data_utils_new import ABSADataset
-from data_utils_new import read_line_examples_from_file
+from data_utils import ABSADataset
+from data_utils import read_line_examples_from_file
 from eval_utils_ITSCL import compute_scores
 import codecs as cs
 
