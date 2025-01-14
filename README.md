@@ -62,17 +62,14 @@ We further investigate the ability of ITSCL under :
 
 
 ## The Parameter settings: 
-
-  T5-base（Optimal Epochs）==50 (Restaurant)
-  T5-base（Optimal Epochs）==50 (Laptop)
-  T5-large（Optimal Epochs）==35 (Laptop)
-  T5-large（Optimal Epochs）==30 (Restaurant)
+    T5-base（Optimal Epochs）==50 (Restaurant)
+    T5-base（Optimal Epochs）==50 (Laptop)
+    T5-large（Optimal Epochs）==35 (Laptop)
+    T5-large（Optimal Epochs）==30 (Restaurant)
  
- T5-base excelled at 50 epochs, T5-large at 35 epochs (Laptop) and 30 epochs (Restaurant).
-
- The parameter settings for the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
+    The parameter settings for the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
  
- This template is primarily used for training or inference in sentiment analysis tasks focused on the laptop domain.
+    This template is primarily used for training or inference in sentiment analysis tasks focused on the laptop domain.
 
     prefix_sentenceLaptopN= "Example: the laptop struggles with high-end games. | aspect term is laptop, opinion term is struggles, category is laptop functionality, and sentiment is negative. Now, Given the sentence:"
 
