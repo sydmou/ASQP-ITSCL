@@ -60,6 +60,27 @@ We further investigate the ability of ITSCL under :
     pytorch_lightning==0.8.1
     numpy==1.21.2
 
+
+##  
+ 
+ This template is primarily used for training or inference in sentiment analysis tasks focused on the laptop domain.
+
+    prefix_sentenceLaptopN= "Example: the laptop struggles with high-end games. | aspect term is laptop, opinion term is struggles, category is laptop functionality, and sentiment is negative. Now, Given the sentence:"
+
+    #  This template is primarily used for training or inference in sentiment analysis tasks focused on the restaurant domain.
+  
+    prefix_sentenceRestaurantN = "Example: this place has got to be the best japanese restaurant in the new york area. | aspect term is place, opinion term is best, category is restaurant general, and sentiment is postive. Now, Given the sentence:"
+
+    sufix_sentence = "| What are the aspect terms, opinion terms, categories and sentiments?"
+
+    # Usage:
+    # - The `prefix_sentenceRestaurantN` should be set according to the dataset or domain-specific requirements.
+    #   For example:
+    #   - In the "Restaurant" domain, use `prefix_sentenceRestaurantN`.
+    #   - For the "Laptop" domain, use `prefix_sentenceLaptopN`.
+    # - This provides flexibility to choose different prefix templates based on the dataset or analysis context
+
+
 ## ☕️ Citation
 
 If you find this repository helpful, please consider citing our paper:
