@@ -43,13 +43,13 @@ The quadruple extraction performance of five different systems (including baseli
 
 
 <p align="center">
- <img src="./images/fig4.png" width="60%"/>
+ <img src="./images/fig4.png" width="70%"/>
 </p>
 
 We further investigate the ability of ITSCL under SNE:
 
 <p align="center">
-   <img src="./images/fig5.png" width="60%"/>
+   <img src="./images/fig5.png" width="70%"/>
 </p>
 
 
