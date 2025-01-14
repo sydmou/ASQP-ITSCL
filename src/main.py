@@ -63,7 +63,7 @@ def init_args():
     #parser.add_argument("--learning_rate", default=3e-4, type=float)
     parser.add_argument("--learning_rate", default=9e-5, type=float)
 
-    parser.add_argument("--num_train_epochs", default=30, type=int,
+    parser.add_argument("--num_train_epochs", default=50, type=int,
                         help="Total number of training epochs to perform.")
     parser.add_argument('--seed', type=int, default=123,
                         help="random seed for initialization")
