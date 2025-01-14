@@ -255,11 +255,9 @@ class T5FineTuner(pl.LightningModule):
        
 
         # return original loss plus the characteristic-specific SCL losses
-        #loss = outputs[0] + opinion_contrastive_loss + sentiment_contrastive_loss + aspect_contrastive_loss 
-        #loss = outputs[0] + opinion_contrastive_loss + sentiment_contrastive_loss + aspect_contrastive_loss + aspect_opinion_contrastive_loss
-        #loss = outputs[0] + aspect_opinion_contrastive_loss
-        #loss = outputs[0] +  sentiment_contrastive_loss
+      
         loss = outputs[0]*100+ opinion_contrastive_loss + sentiment_contrastive_loss + aspect_contrastive_loss + aspect_opinion_contrastive_loss
+        
         return loss
 
 
