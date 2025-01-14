@@ -19,21 +19,21 @@ ITSCL is an instruction tuning-based contrastive learning method for ASQP Predic
 
 
 <p align="center">
-    <img src="./images/fig1.png" width="100%">
+    <img src="./images/fig1.png" width="60%">
 </p>
 
 
 ## Results Datasets
 
 <p align="center">
-   <img src="./images/fig3.png" width="100%"/>
+   <img src="./images/fig3.png" width="60%"/>
 </p>
 
 
 ## ✨ Methods 
 
 <p align="center">
-    <img src="./images/fig2.png" width="100%">
+    <img src="./images/fig2.png" width="60%">
 </p>
 
 
@@ -43,13 +43,13 @@ The quadruple extraction performance of five different systems (including baseli
 
 
 <p align="center">
- <img src="./images/fig4.png" width="100%"/>
+ <img src="./images/fig4.png" width="60%"/>
 </p>
 
 We further investigate the ability of ITSCL under SNE:
 
 <p align="center">
-   <img src="./images/fig5.png" width="100%"/>
+   <img src="./images/fig5.png" width="60%"/>
 </p>
 
 
