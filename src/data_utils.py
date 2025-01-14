@@ -78,8 +78,15 @@ def get_ITBPE_style_targets(sents, labels):
     #print(len(labels))
     targets = []
     inputs = []
+
+    #  This template is primarily used for training or inference in sentiment analysis tasks focused on the laptop domain.
+
     prefix_sentenceLaptopN= "Example: the laptop struggles with high-end games. | aspect term is laptop, opinion term is struggles, category is laptop functionality, and sentiment is negative. Now, Given the sentence:"
+
+    #  This template is primarily used for training or inference in sentiment analysis tasks focused on the restaurant domain.
+  
     prefix_sentenceRestaurantN = "Example: this place has got to be the best japanese restaurant in the new york area. | aspect term is place, opinion term is best, category is restaurant general, and sentiment is postive. Now, Given the sentence:"
+
     sufix_sentence = "| What are the aspect terms, opinion terms, categories and sentiments?"
     prefix_words = prefix_sentenceRestaurantN.split()
     prefix_after = sufix_sentence.split()
