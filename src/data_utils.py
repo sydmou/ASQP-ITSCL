@@ -88,7 +88,16 @@ def get_ITBPE_style_targets(sents, labels):
     prefix_sentenceRestaurantN = "Example: this place has got to be the best japanese restaurant in the new york area. | aspect term is place, opinion term is best, category is restaurant general, and sentiment is postive. Now, Given the sentence:"
 
     sufix_sentence = "| What are the aspect terms, opinion terms, categories and sentiments?"
+
+    # Usage:
+    # - The `prefix_sentenceRestaurantN` should be set according to the dataset or domain-specific requirements.
+    #   For example:
+    #   - In the "Restaurant" domain, use `prefix_sentenceRestaurantN`.
+    #   - For the "Laptop" domain, use `prefix_sentenceLaptopN`.
+    # - This provides flexibility to choose different prefix templates based on the dataset or analysis context
+  
     prefix_words = prefix_sentenceRestaurantN.split()
+  
     prefix_after = sufix_sentence.split()
     # Iterate through each label set to process quadruples
     for sent, label in zip(sents, labels):
