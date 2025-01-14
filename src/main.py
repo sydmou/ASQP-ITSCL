@@ -135,7 +135,6 @@ class T5FineTuner(pl.LightningModule):
     """
     Fine tune a pre-trained T5 model
     """
-    #def __init__(self, hparams, tfm_model, tokenizer, cont_model, op_model, as_model, op_as_model, cat_model):
     def __init__(self, hparams, tfm_model, tokenizer, cont_model, op_model, as_model, op_as_model):
         super(T5FineTuner, self).__init__()
         self.hparams.update(vars(hparams))
@@ -144,9 +143,9 @@ class T5FineTuner(pl.LightningModule):
         self.cont_model = cont_model
         self.op_model = op_model
         self.as_model = as_model
-        #self.cat_model = cat_model
         self.op_as_model = op_as_model
         self.tokenizer = tokenizer
+        
     def is_logger(self):
         return True
 
@@ -469,9 +468,7 @@ if args.do_train:
     cont_model = LinearModel()
     op_model = LinearModel()
     as_model = LinearModel()
-    #cat_model = LinearModel()
     op_as_model = LinearModel()
-    #model = T5FineTuner(args, tfm_model, tokenizer, cont_model, op_model, as_model, op_as_model, cat_model)
 
     model = T5FineTuner(args, tfm_model, tokenizer, cont_model, op_model, as_model, op_as_model)
 
