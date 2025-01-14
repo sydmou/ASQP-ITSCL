@@ -64,8 +64,8 @@ We further investigate the ability of ITSCL under :
 ## The Parameter settings: 
     T5-base（Optimal Epochs）==50 (Restaurant)
     T5-base（Optimal Epochs）==50 (Laptop)
-    T5-large（Optimal Epochs）==35 (Laptop)
     T5-large（Optimal Epochs）==30 (Restaurant)
+    T5-large（Optimal Epochs）==35 (Laptop)  
  
     The parameter settings for the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
  
