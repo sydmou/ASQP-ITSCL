@@ -62,6 +62,7 @@ We further investigate the ability of ITSCL under :
 
 
 ## The Parameter settings: 
+
  
  T5-base excelled at 50 epochs, T5-large at 35 epochs (Laptop) and 30 epochs (Restaurant).
 
