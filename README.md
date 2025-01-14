@@ -67,8 +67,7 @@ We further investigate the ability of ITSCL under SNE:
     
 ## The Parameter settings:  
     For the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
-    # Usage:
-    # - The `prefix_sentence` should be set according to the dataset or domain-specific requirements.
+    # Usage: The `prefix_sentence` should be set according to the dataset.
     #   For example:
     #   - In the "Restaurant" domain, use `prefix_sentenceRestaurantN`.
     #   - For the "Laptop" domain, use `prefix_sentenceLaptopN`.
