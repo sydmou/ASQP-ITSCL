@@ -79,8 +79,6 @@ We further investigate the ability of ITSCL under SNE:
     # Experiment settings for T5-base: (768, 28)
     # Experiment settings for T5-large: (1024, 1024)
 
-
-
 ## ☕️ Citation
 
 If you find this repository helpful, please consider citing our paper:
