@@ -73,6 +73,12 @@ We further investigate the ability of ITSCL under SNE:
     #   - For the "Laptop" domain, use `prefix_sentenceLaptopN`.
     # - This provides flexibility to choose different prefix templates based on the dataset.
 
+    Regarding the input and output settings of nn.Linear in the class LinearModel(nn.Module) in the main.py file:
+	•	Experiment settings for T5-base: (768, 28)
+	•	Experiment settings for T5-large: (1024, 1024)
+
+
+
 ## ☕️ Citation
 
 If you find this repository helpful, please consider citing our paper:
