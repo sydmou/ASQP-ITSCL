@@ -67,6 +67,7 @@ We further investigate the ability of ITSCL under SNE:
     
 ## The Parameter settings:  
     For the function def get_ITBPE_style_targets(sents, labels): in the data_utils.py file: 
+    
     # Usage: The `prefix_sentence` should be set according to the dataset.
     #   For example:
     #   - In the "Restaurant" domain, use `prefix_sentenceRestaurantN`.
@@ -74,8 +75,9 @@ We further investigate the ability of ITSCL under SNE:
     # - This provides flexibility to choose different prefix templates based on the dataset.
 
     Regarding the input and output settings of nn.Linear in the class LinearModel(nn.Module) in the main.py file:
-	•	Experiment settings for T5-base: (768, 28)
-	•	Experiment settings for T5-large: (1024, 1024)
+    
+    # Experiment settings for T5-base: (768, 28)
+    # Experiment settings for T5-large: (1024, 1024)
 
 
 
